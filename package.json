@@ -5,6 +5,7 @@
     "test": "ava -v"
   },
   "dependencies": {
-    "ava": "^0.25.0"
+    "ava": "^0.25.0",
+    "mongodb": "^3.0.2"
   }
 }

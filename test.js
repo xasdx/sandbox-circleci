@@ -1,3 +1,7 @@
 let test = require("ava")
+let underTest = require(".")
 
-test("passes", t => t.pass())
+test("operates with database", t => {
+  let results = underTest.operate()
+  t.is(results[1].name, "doge")
+})

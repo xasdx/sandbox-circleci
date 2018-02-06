@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:latest-browsers
+      - image: circleci/mongo:3.7-jessie
     steps:
       - checkout
       - run:
