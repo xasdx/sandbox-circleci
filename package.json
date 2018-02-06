@@ -1,0 +1,10 @@
+{
+  "name": "sandbox-circleci",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "ava -v"
+  },
+  "dependencies": {
+    "ava": "^0.25.0"
+  }
+}
