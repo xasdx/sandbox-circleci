@@ -1,7 +1,9 @@
 let test = require("ava")
 let underTest = require(".")
 
-test("operates with database", t => {
-  let results = underTest.operate()
-  t.is(results[1].name, "doge")
+test.cb("operates with database", t => {
+  underTest.operate((results) => {
+    t.is(results[1].name, "doge")
+    t.end()
+  })
 })
