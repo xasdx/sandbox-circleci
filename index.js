@@ -14,10 +14,9 @@ module.exports = {
         items.find({}).toArray((err, items) => {
           if (err) throw err
           f(items)
+          client.close()
         })
       })
-  
-      client.close()
     })
   }
 }
